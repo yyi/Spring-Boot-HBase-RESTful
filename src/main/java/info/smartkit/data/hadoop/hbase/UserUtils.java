@@ -55,7 +55,7 @@ public class UserUtils implements InitializingBean {
 
     public void addUsers() {
         for (int i = 0; i < 10; i++) {
-            userRepository.save("user" + i,"user" + i + "@yahoo.com", "password" + i);
+            userRepository.save("user" + i,"user" + i + "@yahoo.com", "password密码" + i);
         }
     }
 

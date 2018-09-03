@@ -12,14 +12,14 @@
 
     <context:component-scan base-package="info.smartkit.data.hadoop.hbase"/>
 
-    <hdp:configuration id="hadoopConfiguration">
-        fs.defaultFS=hdfs://localhost:9000
-    </hdp:configuration>
+    <!--<hdp:configuration id="hadoopConfiguration">-->
+        <!--fs.defaultFS=hdfs://192.168.100.3:9000-->
+    <!--</hdp:configuration>-->
 
-    <hdp:hbase-configuration configuration-ref="hadoopConfiguration" zk-quorum="${hbase.zk.host}" zk-port="${hbase.zk.port}"/>
+    <!--<hdp:hbase-configuration configuration-ref="hadoopConfiguration" zk-quorum="${hbase.zk.host}" zk-port="${hbase.zk.port}"/>-->
 
-    <bean id="hbaseTemplate" class="org.springframework.data.hadoop.hbase.HbaseTemplate">
-        <property name="configuration" ref="hbaseConfiguration"/>
-    </bean>
+    <!--<bean id="hbaseTemplate" class="org.springframework.data.hadoop.hbase.HbaseTemplate">-->
+        <!--<property name="configuration" ref="hbaseConfiguration"/>-->
+    <!--</bean>-->
 
 </beans>
